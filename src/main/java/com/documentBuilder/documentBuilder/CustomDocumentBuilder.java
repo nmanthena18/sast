@@ -20,7 +20,7 @@ public class CustomDocumentBuilder { // Renamed the class to avoid conflict
         Transformer transformer;
         try {
             // tf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
-            // tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+            tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
             tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "");
             transformer = tf.newTransformer();
             transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
